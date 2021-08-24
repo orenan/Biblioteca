@@ -1,0 +1,33 @@
+@{
+    ViewData["Title"] = "Cadastrar Livro";
+}
+
+<div>
+    <h1 class="text-center display-5">Cadastro de livro</h1>
+
+    <form>
+        <div class="form-group">
+            <label for="title">Título:</label>
+            <input type="text" class="form-control" id="title" placeholder="O Ladrão de Raios">
+        </div>
+        <div class="form-group">
+            <label for="title">ISBN-13:</label>
+            <input type="text" class="form-control" id="title" placeholder="978-8580575392">
+            <small id="help" class="form-text text-muted">ISBN é um sistema internacional de identificação de livros e softwares que utiliza números para classificá-los por título, autor, país, editora e edição.</small>
+        </div>
+        <div class="form-group">
+            <label for="title">Autor(es):</label>
+            <input type="text" class="form-control" id="title" placeholder="Rick Riordan">
+            <small id="help" class="form-text text-muted">Caso haja mais de um autor separe os nomes utilizando vírgula</small>
+        </div>
+        <div class="form-inline">
+            <label for="title">Ano:</label>
+            <input type="number" max="2021" class="form-control ml-2" id="title" placeholder="2005">
+        </div>
+        <div class="form-group mt-1">
+            <label for="title">Editora:</label>
+            <input type="text" class="form-control" id="title" placeholder="Intrínseca">
+        </div>
+        <button type="submit" class="btn btn-primary">Registrar</button>
+    </form>
+</div>
