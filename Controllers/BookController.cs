@@ -35,7 +35,7 @@ namespace Biblioteca.Controllers {
             _context.Add(book);
             await _context.SaveChangesAsync();
 
-            return RedirectToAction(nameof(Show), new { id = book.Id.ToString() });
+            return RedirectToAction(nameof(Show), new { id = book.Id});
         }
 
         public async Task<IActionResult> Show(int? id) {
